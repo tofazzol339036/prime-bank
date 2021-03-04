@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Bank || Official Site</title>
+    	<!-- CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+                
+                <!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Shahab Uddin Chakladar Bank</h1>
+        <div class="submit-area">
+            <h3>Login</h3>
+            <br>
+            <input type="text" class="form-control" placeholder="Your Email">
+            <br>
+            <input type="password" class="form-control" placeholder="Password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="status deposit">
+                    <h5>Deposit</h5>
+                    <h1>$<span id="currentDeposit">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status withdraw">
+                    <h5>Withdraw</h5>
+                    <h1>$<span id="currentWithdraw">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status balance">
+                    <h5>Balance</h5>
+                    <h1>$<span id="currentBalance">1240</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input type="text" id="depositAmount" class="form-control" placeholder="$ amount you want to deposit">
+                    <br>
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input type="text" id="withdrawAmount"
+                    class="form-control" placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+				<!--Java Script Files-->
+	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
